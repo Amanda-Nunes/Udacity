@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+#Media objects that used to create instances of movie class for each film in the website.
 got = media.Movie("Game of Thrones 1 Season",
                   "1 hour 22min",
                   "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a4/Game_of_Thrones_Temporada_1_Poster.jpg/220px-Game_of_Thrones_Temporada_1_Poster.jpg",
@@ -36,5 +37,7 @@ spider = media.Movie("Spider-Man Homecoming",
                   "https://www.youtube.com/watch?v=n9DwoQ7HWvI")
 
 
+#List call "movies" that has all the movies I created previously in an array.
 movies = [got,aquaman,fantastic,avengers,panther,spider]
+#Use the movie list as input to open_movies_page function.
 fresh_tomatoes.open_movies_page(movies)
